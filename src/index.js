@@ -38,3 +38,4 @@ const findValues = (row, col, matrix) => {
     }
   }
   return Array.from(values);
+}
