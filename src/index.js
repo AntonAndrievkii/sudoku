@@ -1,9 +1,9 @@
 module.exports = 
 function solveSudoku(matrix) {
-	const nextCell = findEmpty(matrix);
-	if (!nextCell) return matrix; 
+	const nextCells = findEmpty(matrix);
+	if (!nextCells) return matrix; 
 
-	let [row, col] = nextCell;
+	let [row, col] = nextCells;
 	const values = findValues(row, col, matrix);
   if (values.length) {
       for (let value of values) {
